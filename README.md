@@ -13,6 +13,7 @@
   - Port 8080 = for Jenkins
   - Port 9000 = for SonarQube
 
+***NOTE*** - Assosciate Elastic IPs with instances we will be creating as it will avoid the change in public ip and hence avoid problems while managing the system enviroment for jenkins and adding tokens
 **Step 2: Clone the Code:**
 
 - Update all the packages and then clone the code.
@@ -342,6 +343,9 @@ sudo systemctl restart jenkins
 sudo systemctl restart jenkins
 ```
 
+Now when we will run our pipeline we will be able to have the reports about dependency checks as well
+![SonarQube](images/sonarQube.png)
+
 **Phase 4: Monitoring**
 
 1. **Install Prometheus and Grafana:**
@@ -654,6 +658,10 @@ You should now have a Grafana dashboard set up to visualize metrics from Prometh
 Grafana is a powerful tool for creating visualizations and dashboards, and you can further customize it to suit your specific monitoring needs.
 
 That's it! You've successfully installed and set up Grafana to work with Prometheus for monitoring and visualization.
+
+And if everything till now has been executed correctly you will be able see grafana's analysis
+![grafana](images/graffana.png)
+
 
 2. **Configure Prometheus Plugin Integration:**
     - Integrate Jenkins with Prometheus to monitor the CI/CD pipeline.

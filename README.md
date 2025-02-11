@@ -1,5 +1,7 @@
 # Netflix Clone - DevSecOps Project
 
+![Architecture](images/architecture.png)
+
 ### **Initial Setup**
 
 **Step 1: Launch EC2 (Ubuntu 22.04):**
@@ -434,6 +436,8 @@ sudo systemctl restart jenkins
 
    `http://<your-server-ip>:9090`
 
+
+
    **Installing Node Exporter:**
 
    Create a system user for Node Exporter and download Node Exporter:
@@ -497,7 +501,7 @@ sudo systemctl restart jenkins
 
    Now we can access the Node Exporter metrics in Prometheus.
 
-2. **Configure Prometheus Plugin Integration:**
+3. **Configure Prometheus Plugin Integration:**
 
    Integrate Jenkins with Prometheus to monitor the CI/CD pipeline.
 

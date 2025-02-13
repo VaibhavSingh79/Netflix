@@ -342,6 +342,8 @@ sudo systemctl restart jenkins
 
 sudo systemctl restart jenkins
 ```
+**NOTE** - We can also use NVD Api key to help with the slow processing speed for checking vulnerabilities while running the pipeline
+
 
 Now when we will run our pipeline we will be able to have the reports about dependency checks as well
 ![SonarQube](images/sonarQube.png)
